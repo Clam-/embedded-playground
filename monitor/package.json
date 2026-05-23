@@ -1,0 +1,26 @@
+{
+  "name": "serial-monitor",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bash dev.sh"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0",
+    "uplot": "^1.6.32",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.0",
+    "concurrently": "^9.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0",
+    "vite": "^6.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@serialport/bindings-cpp",
+      "esbuild"
+    ]
+  }
+}

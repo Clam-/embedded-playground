@@ -1,3 +1,5 @@
 .pio
 .vscode
 src/main.cpp
+monitor/node_modules
+monitor/dist
