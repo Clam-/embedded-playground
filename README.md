@@ -44,6 +44,15 @@ pio device monitor -b 115200
 
 Drop a `.cpp` file into `snippets/` — it just needs `#include <Arduino.h>`, `setup()`, and `loop()`. Then activate it with `./use.sh <name>`.
 
+If a snippet needs PlatformIO libraries, add one header comment per dependency:
+
+```cpp
+// platformio-lib-dep: https://github.com/example/library.git
+// platformio-lib-dep: owner/Registry Library@^1.2.3
+```
+
+`./use.sh <name>` copies those comments into the managed `lib_deps` block in `platformio.ini`.
+
 ## Supported boards
 
 | Environment   | Board          | Platform       |
